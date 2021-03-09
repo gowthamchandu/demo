@@ -31,13 +31,6 @@ pipeline {
         dir("ctt_get_scan_results") {
           sh 'PYTHONPATH=./:${PYTHONPATH} coverage run -m pytest --junitxml=../reports/ctt_get_scan_results-coverage.xml || true'
         }
-	dir("ctt_store_reference") {
-          sh 'PYTHONPATH=./:${PYTHONPATH} coverage run -m pytest --junitxml=../reports/ctt_store_reference-coverage.xml || true'
-        }
-	dir("fargatetask") {
-          sh 'PYTHONPATH=./:${PYTHONPATH} coverage run -m pytest --junitxml=../reports/fargatetask-coverage.xml || true'
-        }
-        
       }
 
     }
