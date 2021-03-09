@@ -6,6 +6,9 @@ pipeline {
     stage("temp"){
       steps{
         echo "Hello gowtham"
+        sh '''
+        echo " " >> reports/abc.xml
+        '''
       }
     
     }
