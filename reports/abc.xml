@@ -1,0 +1,13 @@
+def test_two(): x=95 y=10 > assert x == y E assert 95 == 10 test_app.py:8: AssertionError
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<testsuites>
+<testsuite errors="0" failures="1" hostname="ip-10-13-29-172.us-west-2.compute.internal" name="pytest" skipped="0" tests="2" time="0.071" timestamp="2021-03-09T07:50:44.834038">
+<testcase classname="test_app" file="test_app.py" line="0" name="test_one" time="0.001"/>
+<testcase classname="test_app" file="test_app.py" line="4" name="test_two" time="0.001">
+<failure message="assert 95 == 10">def test_two(): x=95 y=10 > assert x == y E assert 95 == 10 test_app.py:8: AssertionError</failure>
+...
+</testcase>
+...
+</testsuite>
+...
+</testsuites>
