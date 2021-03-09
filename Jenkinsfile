@@ -6,18 +6,14 @@ pipeline {
   // We prepare worker nodes to be able to work
   stages {
     stage("System preparation") {
-      when {
-        branch "feature/HTP*"
-      }
+      
       steps {
         sh "sudo pip install coverage boto3 pytest pytest-cov"
       }
     }
     // Virtual environment creation and deployment
     stage("Unit Test") {
-      when {
-        branch "feature/HTP*"
-      }
+      
       steps {
         script {
           version = sh (
